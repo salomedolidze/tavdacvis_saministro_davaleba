@@ -43,12 +43,25 @@ $(document).ready(function () {
   });
 
   window.addEventListener("resize", () => {
-    const mainMenu = document.querySelector(".main-menu");
 
     if (window.innerWidth < 1219) {
+        let mainMenu = document.querySelector(".main-menu");
+
       mainMenu.classList.add("mobile_nav");
     } else {
+        let mainMenu = document.querySelector(".main-menu");
+
       mainMenu.classList.remove("mobile_nav");
     }
   });
 });
+
+if (window.innerWidth < 1219) {
+    let mainMenu = document.querySelector(".main-menu");
+
+    mainMenu.classList.add("mobile_nav");
+  } else {
+    let mainMenu = document.querySelector(".main-menu");
+
+    mainMenu.classList.remove("mobile_nav");
+  }
